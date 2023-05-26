@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/common_style.css">
+  <link rel="stylesheet" type="text/css" href="css/quizz.css">
+  <title>Valencia Beautiful</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="col- menu-logo">Valencia Beautifu</a>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="quizz.html">Quizz</a></li>
+        <li><a href="galery.html">Gallery</a></li>
+      </ul>
+      <i class="menu-icon">&#9776;</i>
+    </nav>
+  </header>
+  <main class="content">
+      <h1>Valencia Quizz</h1>
+  <div class="col-12 col-s-12">
+    <form id="valencia-form">
+      <fieldset>
+        <legend>Question 1</legend>
+        <label for="q1">What is the name of the famous dish from Valencia?</label><br>
+        <input type="text" id="q1" name="q1"><br><br>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Question 2</legend>
+        <label for="q2">What is the name of the famous market in Valencia?</label><br>
+        <select id="q2" name="q2">
+          <option value="">Choose one</option>
+          <option value="central">Central Market</option>
+          <option value="russafa">Russafa Market</option>
+          <option value="cabañal">Cabañal Market</option>
+        </select><br><br>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Question 3</legend>
+        <label for="q3">What is the name of the river that runs through Valencia?</label><br>
+        <input type="text" id="q3" name="q3"><br><br>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Question 4</legend>
+        <label for="q4">What is the name of the famous park in Valencia?</label><br>
+        <input type="text" id="q4" name="q4"><br><br>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Question 5</legend>
+        <label for="q5">What is the name of the famous architect who designed the City of Arts and Sciences?</label><br>
+        <input type="text" id="q5" name="q5"><br><br>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  </main>
+  <footer>
+    &copy; 2023 Valencia Beautiful
+  </footer>
+  <script>
+       const form = document.getElementById("valencia-form");
+      form.addEventListener("submit", function(event) {
+        event.preventDefault(); // prevent the default form submission
+        
+        const answers = {
+          q1: "paella",
+          q2: "central",
+          q3: "turia",
+          q4: "jardines del turia",
+          q5: "santiago calatrava"
+        };
+        
+        let score = 0;
+        let feedback = "";
+        
+        for (let i = 1; i <= 5; i++) {
+          const answer = form.elements[`q${i}`].value.trim().toLowerCase();
+          if (answer === answers[`q${i}`]) {
+            score += 2;
+            feedback += `Question ${i}: Correct! (+2)\n`;
+          } else if (answer === "") {
+            feedback += `Question ${i}: Not answered. (+0)\n`;
+          } else {
+            score -= 1;
+            feedback += `Question ${i}: Incorrect. (-1)\n`;
+          }
+        }
+        
+        alert(`Score: ${score}\n\n${feedback}`);
+      });
+    // Obtener el elemento del menú y el ícono del menú
+    const menu = document.querySelector('.menu');
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    // Agregar un controlador de eventos para el clic del ícono del menú
+    menuIcon.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

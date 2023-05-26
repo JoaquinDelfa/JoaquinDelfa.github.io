@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/common_style.css">
+  <link rel="stylesheet" type="text/css" href="css/activities.css">
+  <title>Valencia Beautiful</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="col- menu-logo">Valencia Beautifu</a>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="quizz.html">Quizz</a></li>
+        <li><a href="galery.html">Gallery</a></li>
+      </ul>
+      <i class="menu-icon">&#9776;</i>
+    </nav>
+  </header>
+  <main class="content">
+    <h1 class="h1">Tourist Activities</h1>
+
+    <table id="demo"></table>
+
+    <script>
+      var xmlhttp = new XMLHttpRequest();
+     xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+      }
+      };
+     
+     // Abrimos el archivo que está alojado en el servidor datos.xml
+      xmlhttp.open("GET", "tabla.xml" , true);
+      xmlhttp.send();
+     
+     function myFunction(xml) {
+      var x, i, xmlDoc, table;
+     
+     // Obtenemos un objeto XMLDocument con el contenido del archivo xml del servidor
+      xmlDoc = xml.responseXML;
+      table = "<tr><th>Activitie</th><th>Horary</th><th>Price</th></tr>";
+     
+     // Obtenemos todos los nodos denominados CD del archivo xml
+      x = xmlDoc.getElementsByTagName("ACTIVITIES");
+     
+     // Hacemos un bucle recorriendo todos los elementos CD
+      for (i = 0; i < x.length; i++) {
+     
+     // Del elemento X, obtenemos del primer elemento denominado "ANIMAL"
+      table += "<tr><td>" +
+      x[i].getElementsByTagName("ACTIVITIE")[0].childNodes[0].nodeValue +
+      "</td><td>" +
+      x[i].getElementsByTagName("HORARY")[0].childNodes[0].nodeValue +
+      "</td><td>" +
+      x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue +
+      "</td><td>";
+      }
+      document.getElementById("demo").innerHTML = table;
+     }
+     </script>
+    
+  </main>
+  <footer>
+    &copy; 2023 Valencia Beautiful
+  </footer>
+  <script>
+    // Obtener el elemento del menú y el ícono del menú
+    const menu = document.querySelector('.menu');
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    // Agregar un controlador de eventos para el clic del ícono del menú
+    menuIcon.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/w3.css">
+  <link rel="stylesheet" type="text/css" href="/css/common_style.css">
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <title>Valencia Beautiful</title>
+</head>
+
+<body>
+  <header>
+    <a class="menu-logo">Valencia Beautiful</a>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="quizz.html">Quizz</a></li>
+        <li><a href="galery.html">Gallery</a></li>
+      </ul>
+      <i class="menu-icon">&#9776;</i>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="h1">Tourist Sites of Valencia</h1>
+    </div>
+      <div class="containerflex">
+        <ul class="col-s-12 col-6">
+          <li><strong>The City of Arts and Sciences:</strong> This architectural complex is one of the most popular
+            attractions in Valencia. It is made up of several futuristic buildings that house a planetarium, an
+            aquarium, a science museum, a theater and a botanical garden.</li>
+          <li><strong>Valencia Cathedral:</strong> Also known as the Cathedral of Santa María, it is one of the main
+            places of worship in the city. It stands out for its mix of architectural styles, ranging from Gothic to
+            Baroque.</li>
+          <li><strong>The Silk Exchange:</strong> This historic building is an example of Valencian Gothic civil
+            architecture. It was built in the 15th century and was used as a meeting place for the city's silk
+            merchants.</li>
+          <li><strong>The Central Market:</strong> It is one of the largest markets in Europe and has a wide variety
+            of fresh products. It is an ideal place to taste the typical products of Valencian gastronomy.</li>
+          <li><strong>The neighborhood of Carmen:</strong> It is one of the oldest neighborhoods in the city and has
+            numerous narrow streets and charming squares. It is ideal for walking and discovering the history of
+            Valencia.</li>
+        </ul>
+        <ul class="col-s-12 col-6">
+          <li><strong>The Beaches of Valencia:</strong> The city has several beaches that are ideal for relaxing and
+            enjoying the sun and the sea. Some of the most popular are Playa de la Malvarrosa, Playa del Cabanyal and
+            Playa de las Arenas.</li>
+          <li><strong>Mercado de Colón:</strong>This beautiful modernist building is home to a gourmet food market, as
+            well as a variety of restaurants, cafes, and shops. It's a great place to grab a bite to eat or do some
+            shopping.</li>
+          <li><strong>Torres de Serranos:</strong> These Gothic-style towers are part of the old city walls of
+            Valencia and offer great views of the city from the top. They are open daily and admission is around 2
+            euros.</li>
+          <li><strong>La Almoina Archaeological Center:</strong>This museum is located in the heart of the city and
+            showcases the archaeological remains of Valencia's Roman and Moorish past. It's open Tuesday to Sunday and
+            admission is around 2 euros.</li>
+          <li><strong>Plaza del Ayuntamiento:</strong>This is the main square in Valencia and is home to the beautiful
+            City Hall building. It's a great place to people-watch and take in the sights and sounds of the city.</li>
+          <li><strong>La Ciudadela:</strong> This historic fortress was built in the 16th century and is now home to a
+            beautiful park and gardens. It's open daily and admission is free.</li>
+        </ul>
+      </div>
+        <div class="image-container col-12 col-s-12">
+          <img src="/images/index/the-decarbonization-of-tourism-in-action-the-case-of-valencia_2.jpg">
+        </div>
+  </main>
+  <footer>
+    &copy; 2023 Valencia Beautiful
+  </footer>
+  <script>
+    // Obtener el elemento del menú y el ícono del menú
+    const menu = document.querySelector('.menu');
+    const menuIcon = document.querySelector('.menu-icon');
+
+    // Agregar un controlador de eventos para el clic del ícono del menú
+    menuIcon.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

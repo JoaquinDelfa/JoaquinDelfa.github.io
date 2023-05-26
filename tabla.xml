@@ -1,0 +1,52 @@
+<VALENCIA>
+    <ACTIVITIES>
+        <ACTIVITIE>The City of Arts and Sciences</ACTIVITIE>
+        <HORARY>10:00-19:00</HORARY>
+        <PRICE>34.70€</PRICE>
+    </ACTIVITIES>
+    <ACTIVITIES>
+        <ACTIVITIE>Valencia Cathedral</ACTIVITIE>
+        <HORARY>10:30-18:30</HORARY>
+        <PRICE>9.00€</PRICE>
+    </ACTIVITIES>
+    <ACTIVITIES>
+        <ACTIVITIE>The Silk Exchange</ACTIVITIE>
+        <HORARY>10:00-19:00</HORARY>
+        <PRICE>2.00€</PRICE>
+    </ACTIVITIES>
+    <ACTIVITIES>
+        <ACTIVITIE>The Central Market</ACTIVITIE>
+        <HORARY>07:30-15:00</HORARY>
+        <PRICE>Free</PRICE>
+    </ACTIVITIES>
+    <ACTIVITIES>
+        <ACTIVITIE>The neighborhood of Carmen</ACTIVITIE>
+        <HORARY>The Hole Day</HORARY>
+        <PRICE>Free</PRICE>
+    </ACTIVITIES>
+    <ACTIVITIES>
+        <ACTIVITIE>The Beaches of Valencia</ACTIVITIE>
+        <HORARY>The Hole Day</HORARY>
+        <PRICE>Free</PRICE>
+    </ACTIVITIES>
+    <ACTIVITIES>
+        <ACTIVITIE>Oceanografic</ACTIVITIE>
+        <HORARY>10:00 a 18:00</HORARY>
+        <PRICE>30.00€</PRICE>
+    </ACTIVITIES>
+    <ACTIVITIES>
+        <ACTIVITIE>Turia Garden</ACTIVITIE>
+        <HORARY>The Hole Day</HORARY>
+        <PRICE>Free</PRICE>
+    </ACTIVITIES>
+    <ACTIVITIES>
+        <ACTIVITIE>Palace of the Marquis of Dos Aguas</ACTIVITIE>
+        <HORARY>10:00 a 20:00</HORARY>
+        <PRICE>3.00€</PRICE>
+    </ACTIVITIES>
+    <ACTIVITIES>
+        <ACTIVITIE>Boat ride in the Albufera</ACTIVITIE>
+        <HORARY>10:00-19:00</HORARY>
+        <PRICE>10:30-20:00</PRICE>
+    </ACTIVITIES>
+</VALENCIA>

@@ -1,0 +1,74 @@
+/* Estilos para el formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Estilos para la retroalimentación */
+  .feedback {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  
+  .not-answered {
+    color: gray;
+  }
+  .content {
+    width: 90%;
+    margin: 30px;
+    padding: 20px;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  
